@@ -21,4 +21,19 @@ public class Calculadora {
 		
 		return total;
 	}
+	
+	public Integer fatorial(Integer number) {
+		
+		if (number < 0 ) {
+			return null;
+		}
+		
+		Integer fat = 1;
+		
+		for(int i = 1; i <= number; i++) {
+			fat = fat * i;
+		}
+		
+		return fat; 
+	}
 }
